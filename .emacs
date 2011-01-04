@@ -24,9 +24,9 @@
 ;;; Shouldn't be necessary though, with the automatic byte compile stuff.
 
 ;; Identify ourselves
-(setq user-full-name    "Jordan Ritter"
-      user-mail-address "jpr5@darkridge.com"
-      mail-host-address '"darkridge.com")
+(setq user-full-name    "T Jake Luciani"
+      user-mail-address "jake@apache.org"
+      mail-host-address '"apache.org")
 
 ;; Load our settings/config.  Set our load path first, then load up our
 ;; on-the-fly byte-compiler. Then loop over all root files as basenames to load

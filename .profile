@@ -51,9 +51,6 @@ export MANPATH=$MANPATH:/usr/local/git/man
 export EDITOR="/usr/bin/emacs"
 export CVS_EDITOR=$EDITOR SVN_EDITOR=$EDITOR GIT_EDITOR=$EDITOR
 
-# Put the real mysql utils at the beginning of the path.
-export PATH=/opt/local/lib/mysql5/bin:$PATH
-
 
 ##
 ## Aliases
@@ -90,12 +87,3 @@ function fcount {
 }
 alias f=field
 
-function rubylib {
-    if [ -n "$1" ]; then BASE="$1/"; else BASE="/proj/work/rubylib"; fi
-    export BASE
-    echo RUBYLIB will use base: $BASE
-    export RUBYLIB=$BASE:`ruby -e 'puts Dir["#{ENV["BASE"]}/*/**/lib"].join(":")'`:$RUBYLIB
-}
-alias rl=rubylib
-
-test -f .profile.cc && source .profile.cc
