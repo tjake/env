@@ -47,11 +47,6 @@
   (dolist (filename files)
     (load-library filename)))
 
-;; Set the Visual theme
-(if window-system
-    (color-theme-jpr5-night)
-    (color-theme-jpr5-tty))
-
 ;; And finally Emacs custom settings.
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
